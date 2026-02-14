@@ -1,14 +1,19 @@
-print('ghghgh')
+import time
+import random
 
-x = int(input('Enter ur int number: '))
-y = int(input('Enter ur int number at second time: '))
+Guess_number = int(input("Guess a guessed number:"))
 
-sum_a = x + y
-print(sum_a)
+Secret_number = random.randint(1, 100)
 
-print("Twizzy")
+if Guess_number == Secret_number:
+    print('U guessed right!')
+else:
+    while Guess_number != Secret_number:
+        More_attempt = int(input('Once more attempt: '))
+        if More_attempt > 100:
+            raise ValueError ('u daun, the numer have to be mote that 100')
+        if More_attempt < 1:
+            raise ValueError('u daun, the numer have to be mote that 100')
 
-print('my twizz')
-print('hggh')
-
-print('123')
+time.sleep(30)
+print(f'OK, it\'s very hard for u, the secret number equall =:{Secret_number}')
