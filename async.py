@@ -20,3 +20,4 @@ async def seal():
     print('Тюленьчик дополз!')
 
 asyncio.run(seal())
+print()
