@@ -17,3 +17,4 @@ else:
 
 time.sleep(30)
 print(f'OK, it\'s very hard for u, the secret number equall =:{Secret_number}')
+
