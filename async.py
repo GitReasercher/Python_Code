@@ -12,12 +12,25 @@ async def main():
 asyncio.run(main())
 
 
+# async def seal():
+#     print('Тюленьчик начинает ползти')
+#
+#     await asyncio.sleep(6)
+#
+#     print('Тюленьчик дополз!')
+#
+# asyncio.run(seal())
+# print()
+
 async def seal():
-    print('Тюленьчик начинает ползти')
+    print('Тюлень начинает ползти')
 
-    await asyncio.sleep(6)
+    await asyncio.sleep(5)
 
-    print('Тюленьчик дополз!')
+    print('Тюлень уже близко')
+
+    await asyncio.sleep(3)
+
+    print("Тюлень дополз!")
 
 asyncio.run(seal())
-print()
