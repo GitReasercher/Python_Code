@@ -20,4 +20,4 @@ def new_user(password):
     if password < password_long:
         s.exit('В пароле должно быть минимум 8 символов, включая: буквы, цифры')
 
-print(new_user(5678643))
+
